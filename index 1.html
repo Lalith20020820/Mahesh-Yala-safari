@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mahesh Yala Safari Tour</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        safari: ['Georgia', 'serif']
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-green-50 text-green-900">
+    <header class="bg-green-700 text-white py-8 text-center">
+        <h1 class="text-4xl font-bold">Mahesh Yala Safari Tour</h1>
+        <p class="mt-2 text-xl">A Journey into the Wild of Sri Lanka</p>
+
+        <nav class="mt-4">
+            <div class="flex justify-center space-x-4">
+                <button onclick="showSection('home')" class="px-4 py-2 bg-green-600 hover:bg-green-500 rounded-md transition">Home</button>
+                <button onclick="showSection('gallery')" class="px-4 py-2 bg-green-600 hover:bg-green-500 rounded-md transition">Gallery</button>
+                <button onclick="showSection('contact')" class="px-4 py-2 bg-green-600 hover:bg-green-500 rounded-md transition">Contact Us</button>
+                <button onclick="showSection('reviews')" class="px-4 py-2 bg-green-600 hover:bg-green-500 rounded-md transition">Reviews</button>
+            </div>
+        </nav>
+    </header><div id="sections-container">
+    <!-- Other sections -->
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="container mx-auto px-4 py-8 hidden">
+        <h2 class="text-3xl font-semibold text-center mb-8">Contact Us</h2>
+        <div class="max-w-md mx-auto bg-green-100 p-8 rounded-xl">
+            <div class="space-y-4">
+                <p><strong>Phone Number:</strong> <a href="tel:+94779923152" class="text-green-700 underline">077 992 3152</a></p>
+                <p><strong>Address:</strong> Mahesh Chandika, Yalawathugoda, Tissamaharama</p>
+                <button class="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition" 
+                    onclick="window.location.href='tel:+94779923152';">
+                    Call Now
+                </button>
+                <button class="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition" 
+                    onclick="window.open(https://www.google.com/maps/place/Mahesh+safari+-+Yala+tour+and+taxi+service/@6.2610994,81.3055719,15z/data=!4m6!3m5!1s0x3ae69d99cf158883:0x43ce4e9721676103!8m2!3d6.2610994!4d81.3055719!16s%2Fg%2F11txdv3pbf?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D);">
+                    View on Google Maps
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    function showSection(sectionName) {
+        // Hide all sections
+        document.querySelectorAll('#sections-container > section').forEach(section => {
+            section.classList.add('hidden');
+        });
+
+        // Show selected section
+        const section = document.getElementById(sectionName + '-section');
+        if (section) section.classList.remove('hidden');
+    }
+</script>
+
+    <div id="sections-container">
+        <!-- Home Section -->
+        <main id="home-section" class="container mx-auto px-4 py-8">
+            <section class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h2 class="text-3xl font-semibold mb-4">Discover Yala's Wildlife</h2>
+                    <ul class="space-y-3">
+                        <li class="bg-green-100 p-4 rounded-lg shadow-md">
+                            <strong>Yala National Park:</strong> Yala National Park, located in the southeastern corner of Sri Lanka, is one of the country's most renowned natural sanctuaries. Spanning over 978 square kilometers, this verdant expanse is celebrated for its diverse ecosystems, including dry forests, grasslands, lagoons, and wetlands. It offers visitors a unique opportunity to immerse themselves in the rich biodiversity and majestic beauty of Sri Lanka's wilderness.
+
+
+                        </li>
+                        <li class="bg-green-100 p-4 rounded-lg shadow-md">
+                            <strong>A Haven for Wildlife:</strong> The Yala Forest is home to an extraordinary array of wildlife. It boasts one of the highest densities of leopards in the world, making it a prime destination for wildlife enthusiasts and photographers. Apart from the elusive leopard, the park shelters elephants, sloth bears, crocodiles, and spotted deer. Birdlife in Yala is equally mesmerizing, with over 200 recorded species, including the vibrant painted stork, peacocks, and endemic Sri Lankan junglefowl.
+
+Yala’s unique ecosystems support a wide range of flora and fauna, many of which are endemic to the region. The arid climate and seasonal monsoons contribute to the formation of waterholes and lagoons that become lifelines for animals during the dry months. The juxtaposition of dense forests and open plains ensures that visitors are constantly treated to spectacular and varying landscapes.
+                        </li>
+                        <li class="bg-green-100 p-4 rounded-lg shadow-md">
+                            <strong>The Yala Safari Experience:</strong> The Yala Safari Service is a gateway to the wonders of the national park. Organized tours take visitors on an unforgettable journey into the heart of the wild. The safari experience is tailored to suit diverse preferences, with options ranging from half-day excursions to full-day adventures.
+
+Each safari is guided by experienced trackers and naturalists who share their extensive knowledge of the park’s flora and fauna. The expertise of these guides ensures that visitors have the best chance to spot iconic wildlife while also learning about the ecological significance of Yala. Safaris are conducted in specially designed 4x4 vehicles, providing comfort and safety as visitors traverse rugged terrain.
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="2023-11-24.jpg" alt="Yala Landscape" class="rounded-xl shadow-2xl">
+                </div>
+            </section>
+
+            <!-- Reviews Section -->
+            <section id="reviews-section" class="mt-12">
+                <h2 class="text-3xl font-semibold text-center mb-8">Customer Reviews</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-green-100 p-6 rounded-xl">
+                        <p class="italic">"An incredible safari experience! Saw multiple leopards and got amazing photos."</p>
+                        <p class="font-bold mt-2">- Sarah M.</p>
+                    </div>
+                    <div class="bg-green-100 p-6 rounded-xl">
+                        <p class="italic">"Professional guides, beautiful landscapes, and unforgettable wildlife encounters."</p>
+                        <p class="font-bold mt-2">- John D.</p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-semibold text-center mt-12 mb-8">Leave a Review</h2>
+                <div class="max-w-md mx-auto bg-green-100 p-8 rounded-xl">
+                    <form class="space-y-4" onsubmit="submitReview(event)">
+                        <input type="text" placeholder="Your Name" class="w-full p-2 rounded-md" required>
+                        <textarea placeholder="Your Review" class="w-full p-2 rounded-md h-32" required></textarea>
+                        <div>
+                            <label class="block mb-1">Upload Photos/Videos:</label>
+                            <input type="file" multiple class="w-full" accept="image/*,video/*">
+                        </div>
+                        <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition">
+                            Submit Review
+                        </button>
+                    </form>
+                </div>
+
+                <div id="review-gallery" class="grid md:grid-cols-3 gap-6 mt-8">
+                    <!-- Dynamically added review media will be placed here -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Gallery Section (Initially Hidden) -->
+<section id="gallery-section" class="container mx-auto px-4 py-8 hidden">
+    <h2 class="text-3xl font-semibold text-center mb-8">Safari Gallery</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-green-100 p-4 rounded-xl">
+            <img src="2024-05-19 (1).jpg" alt="Safari Image 1" class="rounded-lg">
+            <img src="2024-05-19.jpg" alt="Safari Image 1" class="rounded-lg">
+            <p class="text-center mt-2">Safari vehicle</p>
+        </div>
+        <div class="bg-green-100 p-4 rounded-xl">
+            <img src="2023-11-24 (1).jpg" alt="Safari Image 2" class="rounded-lg">
+            <img src="2023-11-24 (2).jpg" alt="Safari Image 2" class="rounded-lg">
+            <img src="2023-11-24 (3).jpg" alt="Safari Image 2" class="rounded-lg">
+            <img src="2023-11-24 (4).jpg" alt="Safari Image 2" class="rounded-lg">
+            <img src="2023-11-24 (5).jpg" alt="Safari Image 2" class="rounded-lg">
+            <p class="text-center mt-2">Animals</p>
+        </div>
+        <div class="bg-green-100 p-4 rounded-xl">
+            <img src="2023-11-30.jpg" alt="Safari Image 3" class="rounded-lg">
+            <img src="2024-08-12.jpg" alt="Safari Image 3" class="rounded-lg">
+            <p class="text-center mt-2">Others</p>
+        </div>
+    </div>
+
+    <!-- Add Photo Option -->
+    <div class="mt-8 text-center">
+        <h3 class="text-2xl font-medium mb-4">Add Your Photo to the Gallery</h3>
+        <form id="photo-upload-form" class="inline-block">
+            <label for="photo-upload" class="block text-lg font-medium mb-2">Upload a Photo</label>
+            <input type="file" id="photo-upload" name="photo" accept="image/*" class="block mb-4 border rounded-lg px-4 py-2">
+            <button type="button" id="upload-button" class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">Upload</button>
+        </form>
+    </div>
+</section>
+
+
+        <!-- Contact Section (Initially Hidden) -->
+        <section id="contact-section" class="container mx-auto px-4 py-8 hidden">
+            <h2 class="text-3xl font-semibold text-center mb-8">Contact Us</h2>
+            <div class="max-w-md mx-auto bg-green-100 p-8 rounded-xl">
+                <form class="space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full p-2 rounded-md">
+                    <input type="email" placeholder="Your Email" class="w-full p-2 rounded-md">
+                    <textarea placeholder="Your Message" class="w-full p-2 rounded-md h-32"></textarea>
+                    <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-green-800 text-white py-6 text-center">
+        <p>&copy; 2024 Yala Safari Tours - Explore Nature's Wonder</p>
+    </footer>
+
+    <script>
+        function showSection(sectionName) {
+            // Hide all sections
+            document.getElementById('home-section').classList.add('hidden');
+            document.getElementById('gallery-section').classList.add('hidden');
+            document.getElementById('contact-section').classList.add('hidden');
+
+            // Show selected section
+            if (sectionName === 'reviews') {
+                document.getElementById('home-section').classList.remove('hidden');
+                document.getElementById('reviews-section').scrollIntoView({ behavior: 'smooth' });
+            } else {
+                document.getElementById(sectionName + '-section').classList.remove('hidden');
+            }
+        }
+
+        function submitReview(event) {
+            event.preventDefault();
+            const form = event.target;
+            const name = form.querySelector('input[type="text"]').value;
+            const review = form.querySelector('textarea').value;
+            const files = form.querySelector('input[type="file"]').files;
+
+            // Create new review element
+            const reviewElement = document.createElement('div');
+            reviewElement.className = 'bg-green-100 p-6 rounded-xl';
+            reviewElement.innerHTML = `
+                <p class="italic">"${review}"</p>
+                <p class="font-bold mt-2">- ${name}</p>
+            `;
+
+            // Add media elements
+            const galleryElement = document.getElementById('review-gallery');
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                const mediaElement = document.createElement(file.type.startsWith('image/') ? 'img' : 'video');
+                mediaElement.src = URL.createObjectURL(file);
+                mediaElement.className = 'rounded-lg';
+                mediaElement.style.maxWidth = '100%';
+                galleryElement.appendChild(mediaElement);
+            }
+
+            // Add the new review to the page
+            galleryElement.parentElement.insertBefore(reviewElement, galleryElement);
+
+            // Reset the form
+            form.reset();
+        }
+    </script>
+</body>
+</html>
